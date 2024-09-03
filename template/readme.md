@@ -25,3 +25,5 @@ data = transform(data, params)
 1. The **model** should be implemented in `./models/*.py`, including the `__init__`, `forward` functions.
 2. There is a default model in `./models/default.py`, which is a *ResNet34 Model* and can be used as a template. The original article is from [here](https://arxiv.org/abs/1512.03385).
 
+### Tools Design
+1. Three tools are provided in `./tools/`: `train.py`, `test.py`, and `inference.py`. They are the main functions of the framework and can be called from the command line or scripts.
