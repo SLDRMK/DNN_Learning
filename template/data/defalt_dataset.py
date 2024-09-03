@@ -1,14 +1,12 @@
 import os
 import json
-import torch
-import torch.nn as nn
-
+from torch.utils.data import Dataset
 from .io import load_data
 
-class DefaultDataset(nn.Module):
+class DefaultDataset(Dataset):
     def __init__(
         self,
-        root='./datasets/default',
+        root='./datasets/DefaultDataset',
         transform=None,
         split='train',
         split_file="split.json"):
