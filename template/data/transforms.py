@@ -14,8 +14,8 @@ class ToTensor(object):
     def __init__(self) -> None:
         pass
 
-    def __call__(self, data, params=None):
-        for key in data:
+    def __call__(self, data, params):
+        for key in params["target_keys"]:
             data[key] = torch.from_numpy(data[key])
         return data
     

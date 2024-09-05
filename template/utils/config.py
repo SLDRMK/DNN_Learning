@@ -40,7 +40,7 @@ if __name__ == '__main__':
                 "params" : {"target": "input"}, 
             }, {
                 "name" : "ToTensor", 
-                "params" : {}
+                "params" : {"target_keys" : ["input", "GT"]}
             }],
         }
     }
